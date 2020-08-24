@@ -204,6 +204,10 @@ ul, ol {
     .bg-img-small {
         display: block;
     }
+    .md-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 
