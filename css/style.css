@@ -712,7 +712,19 @@ header {
 .about:hover h3 {
     color: #fff;
 }
-
+@media only screen and (min-width: 768px) {
+    .about {
+        padding-top: 0px;
+        padding-left: 190px;
+        padding-right: 190px;
+        text-align: center;
+        font-weight: bolder;
+        border: 0px solid grey;
+    }
+    #about-container {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding-top: 50px;
+    }
+}
 /*------------------------------------*\
 	Why CA
 \*------------------------------------*/
@@ -817,7 +829,7 @@ header {
     position: relative;
     padding: 40px 20px 40px 70px;
     margin: 15px 0px;
-    border: 1px black solid;
+    border: 0px black solid;
     background-color: rgb(156, 224, 209);
     color: rgb(0, 54, 108);
     padding-bottom: 25px;
@@ -825,7 +837,6 @@ header {
 
 .incentive:hover {
     color: rgb(0, 54, 108);
-    font-size: 25px;
 }
 
 .incentive i {
@@ -861,6 +872,12 @@ header {
 
 .incentives:hover h3 {
     color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .incentive {
+        font-size: 20px;
+    }
 }
 
 
