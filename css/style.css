@@ -689,7 +689,6 @@ header {
 
 .about:after {
     content: "";
-    background-color: rgb(156, 224, 209);
     position: absolute;
     left: 0;
     top: 0;
