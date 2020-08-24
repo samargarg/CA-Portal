@@ -204,9 +204,11 @@ ul, ol {
     .bg-img-small {
         display: block;
     }
-    .md-padding {
-        padding-top: 60px;
+    #about {
         padding-bottom: 60px;
+    }
+    #whyca {
+        padding-top: 60px;
     }
 }
 
