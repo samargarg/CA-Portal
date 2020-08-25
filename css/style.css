@@ -485,7 +485,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         right: 0;
         height: calc(100vh - 80px);
         -webkit-box-shadow: 0px 80px 0px 0px #1C1D21;
-        box-shadow: 0px 80px 0px 0px #1C1D21;
+        box-shadow: 10px 80px 40px 0px #1C1D21;
         max-width: 250px;
         width: 0%;
         -webkit-transform: translateX(100%);
@@ -493,7 +493,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         transform: translateX(100%);
         margin: 0;
         overflow-y: auto;
-        background: #1C1D21;
+        background: #ffffff;
         -webkit-transition: 0.2s all;
         transition: 0.2s all;
     }
@@ -508,7 +508,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .main-nav li a {
         display: block;
-        color: #FFF;
+        color: rgb(254, 92, 100);
         -webkit-transition: 0.2s all;
         transition: 0.2s all;
     }
