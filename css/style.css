@@ -1813,12 +1813,16 @@ header {
   border-radius: 3px;
   background-color: rgb(254, 92, 100);
   color: white;
-  transition: width 0.1s;
+  
 }
 
-.footer-follow li a:hover {
+#mail {
+    transition: width 0.1s;
+}
+#mail:hover {
     width: 150px;
 }
+
 .footer-copyright p {
     text-align: center;
     font-size: 14px;
