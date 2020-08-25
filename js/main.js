@@ -91,3 +91,14 @@
 	});
 
 })(jQuery);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelector("#mail").onmouseover = () => {
+		document.querySelector("#mail").innerHTML = "ecell@iith.ac.in";
+	}
+	document.querySelector("#mail").onmouseout = () => {
+		document.querySelector("#mail").innerHTML = '<i class="fa fa-envelope-o"></i>';
+	}
+})
+

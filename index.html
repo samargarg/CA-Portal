@@ -36,6 +36,11 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+    <script src = "js/CA_java.js"></script>
 </head>
 
 <body>
@@ -73,7 +78,6 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About Us</a></li>
 					<li><a href="#whyca">Why CA</a></li>
 					<li><a href="#responsibilities">Responsibilities</a></li>
@@ -116,8 +120,8 @@
 							<h1 class="white-text">Ambassador</h1>
 							<h1 class="white-text">Program</h1>
 							
-							<button class="white-btn" onclick="window.location.href=''"><a style="color: white;">APPLY FOR CA</a></button>
-							<button class="white-btn" onclick="window.location.href=''"><a style="color: white;">DASHBOARD</a></button>
+							<button class="white-btn" onclick="signinwithgoogle()"><a style="color: white;">APPLY FOR CA</a></button>
+							<button class="white-btn" onclick="dashboard()"><a style="color: white;">DASHBOARD</a></button>
 							
 						</div>
 					</div>
@@ -166,7 +170,7 @@
 
 
 	<!-- Why CA -->
-	<div id="whyca" class="section md-padding">
+	<div id="whyca" class="section md-padding" style="background-color: rgb(146, 146, 146);">
 
 		<!-- Container -->
 		<div class="container">
@@ -176,7 +180,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title" style="color: rgb(0, 54, 108);">Why CA</h2>
+					<h2 class="title" style="color: rgb(255, 255, 255);">Why CA</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -294,7 +298,7 @@
 
 
 	<!-- Incentives -->
-	<div id="incentives" class="section md-padding" style="background-color: rgb(34, 34, 34);">
+	<div id="incentives" class="section md-padding" style="background-color: rgb(156, 224, 209);">
 
 		<!-- Container -->
 		<div class="container">
@@ -304,7 +308,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title" style="color: white">Incentives</h2>
+					<h2 class="title">Incentives</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -424,61 +428,6 @@
 	
                            
 
-	<!-- Contact -->
-	<div id="contact" class="section md-padding" style="background-color: rgb(156, 224, 209)">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section-header -->
-				<div class="section-header text-center">
-					<h2 class="title" style="color: rgb(0, 54, 108);">Contact Us</h2>
-				</div>
-				<!-- /Section-header -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-phone"></i>
-						<h3>Phone</h3>
-						<p>9617291727 / 9398532891</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-envelope"></i>
-						<h3>Email</h3>
-						<p>ecell@iith.ac.in</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-map-marker"></i>
-						<h3>Address</h3>
-						<p>E-Cell Office, IIT Hyderabad</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Contact -->
 
 
 	<!-- Footer -->
@@ -498,12 +447,17 @@
 					</div>
 					<!-- /footer logo -->
 
+					<div class="footer-contact">
+						E-Cell Office, IIT Hyderabad | 9617291727 | 9398532891
+					</div>
+
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li><a href="https://www.facebook.com/ecell.iithyd/"><i class="fa fa-facebook"></i></a></li>
-						<!--<li><a href="https://twitter.com/ecell_iith"><i class="fa fa-twitter"></i></a></li>-->
+						<li><a href="https://twitter.com/ecell_iith"><i class="fa fa-twitter"></i></a></li>
 						<!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
 						<li><a href="https://www.instagram.com/ecell_iith/?hl=en"><i class="fa fa-instagram"></i></a></li>
+						<li><a id="mail"><i class="fa fa-envelope-o"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-hyderabad/about/"><i class="fa fa-linkedin"></i></a></li>
 						<!--<li><a href="#"><i class="fa fa-youtube"></i></a></li>-->
 					</ul>
