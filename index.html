@@ -40,12 +40,30 @@
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
-    <script src = "js/CA_java.js"></script>
+	<script src = "js/CA_java.js"></script>
+	<style>
+		html {
+			scroll-snap-type: mandatory;
+			scroll-snap-points-y: repeat(150vh);
+			scroll-snap-type: y mandatory;
+			scroll-behavior: smooth;
+		}
+		.hello {
+			scroll-snap-align: center;
+			scroll-padding-top: 40px;
+		
+		} 
+		@media(max-width: 767px) {
+			html {
+				scroll-snap-type: none;
+			}	
+		}
+	</style>
 </head>
 
 <body>
 	<!-- Header -->
-	<header id="home">
+	<header id="home" class="hello">
 		<!-- Background Image -->
 		<div class="bg-img" style="background-image: url('img/head_new_green.jpg');">
 			<div class="overlay"></div>
@@ -63,8 +81,8 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="index.html">
-							<img class="logo" src="img/logo.png" alt="logo">
-							<img class="logo-alt" src="img/logo-blue.png" alt="logo">
+							<img class="logo" src="img/logo-alt.png" alt="logo">
+							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -136,7 +154,7 @@
 	<!-- /Header -->
 
 	<!-- About Us -->
-	<div id="about" class="section md-padding">
+	<div id="about" class="section md-padding hello">
 
 		<!-- Container -->
 		<div class="container" id="about-container">
@@ -170,7 +188,7 @@
 
 
 	<!-- Why CA -->
-	<div id="whyca" class="section md-padding" style="background-color: rgb(146, 146, 146);">
+	<div id="whyca" class="section md-padding hello"style="background-color: rgb(146, 146, 146);">
 
 		<!-- Container -->
 		<div class="container">
@@ -221,7 +239,7 @@
 	
 
 	<!-- Portfolio -->
-	<div id="responsibilities" class="section md-padding bg-grey" style="background-color: white;">
+	<div id="responsibilities" class="section md-padding bg-grey hello" style="background-color: white;">
 
 		<!-- Container -->
 		<div class="container">
@@ -298,7 +316,7 @@
 
 
 	<!-- Incentives -->
-	<div id="incentives" class="section md-padding" style="background-color: rgb(156, 224, 209);">
+	<div id="incentives" class="section md-padding hello" style="background-color: rgb(156, 224, 209);">
 
 		<!-- Container -->
 		<div class="container">
@@ -375,7 +393,7 @@
 
 
 	<!-- Terms -->
-	<div id="terms" class="section md-padding">
+	<div id="terms" class="section md-padding hello">
 
 		<!-- Container -->
 		<div class="container">
@@ -431,7 +449,7 @@
 
 
 	<!-- Footer -->
-	<footer id="footer" class="sm-padding bg-dark"  style="background-color: rgb(156, 224, 209)">
+	<footer id="footer" class="sm-padding bg-dark hello" style="background-color: rgb(156, 224, 209)">
 
 		<!-- Container -->
 		<div class="container">

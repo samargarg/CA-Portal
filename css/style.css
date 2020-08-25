@@ -329,10 +329,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 @media only screen and (max-width: 767px) {
     #nav.nav-transparent .navbar-brand .logo-alt {
-        display: none !important;
+        display: block !important;
     }
     #nav.nav-transparent .navbar-brand .logo {
-        display: block !important;
+        display: none !important;
     }
 }
 
@@ -360,9 +360,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     left: 0;
     right: 0;
     padding: 15px px;
-    background-color: rgb(0, 0, 0) !important;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    opacity: 80%;
+    background-color: rgb(255, 255, 255) !important;
+    border-bottom: 0px solid rgb(0, 0, 0);
+    opacity: 100%;
 }
 
 #nav.nav-transparent {
@@ -383,7 +383,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     /* initial font color */
     .main-nav>li>a {
-        color: #ffffff;
+        color: rgb(0, 54, 108);
         padding: 15px 0px;
     }
     /* later font color */
@@ -479,7 +479,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0px 0px;
     }
     #nav.nav-transparent {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(255, 255, 255, 0.8);
     }
     .main-nav {
         position: fixed;
@@ -724,7 +724,8 @@ header {
         border: 0px solid grey;
     }
     #about-container {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding-top: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top: 50px;
     }
 }
 /*------------------------------------*\
@@ -740,6 +741,8 @@ header {
     background-color: rgb(255, 255, 255);
     height: 250px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .whyca i {
