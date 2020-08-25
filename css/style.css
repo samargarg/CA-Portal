@@ -51,6 +51,7 @@ body {
     overflow-x: hidden;
     color: #000000;
     background-color: rgb(255, 255, 255);
+    scroll-snap-type: y mandatory;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -508,7 +509,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .main-nav li a {
         display: block;
-        color: rgb(254, 92, 100);
+        color: rgb(0, 54, 108);
         -webkit-transition: 0.2s all;
         transition: 0.2s all;
     }
@@ -736,14 +737,14 @@ header {
     padding: 40px 20px;
     border: 0px solid #EEE;
     margin: 15px 0px;
-    background-color: rgb(254, 92, 100);
+    background-color: rgb(255, 255, 255);
     height: 250px;
     border-radius: 20px;
 }
 
 .whyca i {
     font-size: 36px;
-    color: white;
+    color: rgb(254, 92, 100);
     margin-bottom: 20px;
 }
 
@@ -767,7 +768,7 @@ header {
 .whyca h3 {
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
-    color: white;
+    color: rgb(254, 92, 100);
 }
 
 .whyca:hover h3 {
@@ -775,7 +776,7 @@ header {
 }
 
 .whyca:hover i {
-    color: rgb(34, 34, 34);
+    color: rgb(0, 54, 108);
 }
 
 /*------------------------------------*\
